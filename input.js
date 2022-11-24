@@ -1,16 +1,16 @@
 
 const handleUserInput = function (data) { 
-
   if (data === '\u0003') {
     console.log("Exiting") 
     process.exit()
   } 
-  const obj = {w: "Move: up", a: "Move: left", s: "Move: down", d: "Move: right"} 
+  const obj = {w: "Move: up", a: "Move: left", s: "Move: down", d: "Move: right", l: 'Say: hello'} 
   const command = obj[data] 
   if (command) {  
 
     connection.write(command)
-  }
+  } 
+  
   
 };
 
